@@ -2,7 +2,11 @@ import base64
 import time
 import uuid
 import json
-
+from vertexai.generative_models import (
+    GenerativeModel,
+    Content,
+    Part
+)
 from vertexai.generative_models import GenerativeModel
 
 logger = logging.getLogger(__name__)
