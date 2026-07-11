@@ -208,6 +208,7 @@ HTML_TEMPLATE = """
     </div>
 
     <script>
+        let sessionId=null;
         function sendMessage() {
             const userInput = document.getElementById('user-input');
             const message = userInput.value;
@@ -229,10 +230,11 @@ HTML_TEMPLATE = """
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ user_message: message })
+                body: JSON.stringify({ user_message: message, session_id:sessionId })
             })
             .then(response => response.json())
             .then(data => {
+                sessionId = data.session_id;
                 const botMessageDiv = document.createElement('div');
                 botMessageDiv.className = 'message bot-message';
                 botMessageDiv.textContent = data.response;
