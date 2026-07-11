@@ -5,7 +5,8 @@ import json
 from vertexai.generative_models import (
     GenerativeModel, 
     Content,
-    Part
+    Part,
+    GenerationConfig
 )
 
 from vertexai.generative_models import GenerativeModel
