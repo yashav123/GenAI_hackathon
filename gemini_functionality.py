@@ -5,7 +5,7 @@ import json
 import logging
 from typing import Optional, Dict
 from vertexai.preview import generative_models
-from vertexai.generative_models import GenerativeModel, Part, GenerationConfig, Content
+from vertexai.generative_models import GenerativeModel
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
