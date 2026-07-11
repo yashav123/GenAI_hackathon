@@ -7,6 +7,7 @@ from vertexai.generative_models import (
     Content,
     Part
 )
+
 from vertexai.generative_models import GenerativeModel
 
 logger = logging.getLogger(__name__)
