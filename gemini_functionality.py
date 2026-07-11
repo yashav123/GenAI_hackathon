@@ -2,11 +2,8 @@ import base64
 import time
 import uuid
 import json
-import magic
 import logging
 from typing import Optional, Dict
-from google.cloud import bigquery
-
 from vertexai.preview import generative_models
 from vertexai.generative_models import GenerativeModel, Part, GenerationConfig, Content
 
