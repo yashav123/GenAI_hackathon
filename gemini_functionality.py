@@ -21,7 +21,12 @@ chat_hist = "student_chat.json"
 class GeminiFunctionality:
 
     def __init__(self, model: str, parameters: Dict[str, str] = None, prompt: str = ""):
-
+        self.generation_config = GenerationConfig(
+        temperature=0.3,
+        top_k=40,
+        top_p=0.9,
+        max_output_tokens=200
+        )
         self.parameters = parameters
         self.model = model
         self.session = {}
