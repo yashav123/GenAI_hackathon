@@ -3,7 +3,7 @@ import time
 import uuid
 import json
 from vertexai.generative_models import (
-    GenerativeModel,
+    GenerativeModel, 
     Content,
     Part
 )
